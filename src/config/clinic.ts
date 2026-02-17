@@ -1,307 +1,331 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Kantéa Fisioterapia",
+  logo: "/images/logo.png",
+  tagline: "Fisioterapia personalizada en Valladolid",
+  description: "Kantéa Fisioterapia es tu clínica de confianza en Valladolid, Álava, especializada en recuperación de lesiones deportivas, fracturas y cirugías. Dirigida por Diego, profesional con valoración de 5 estrellas, ofrecemos tratamientos personalizados combinando terapia manual, punción seca, tecnología Indiba y ejercicios pautados. Cada sesión está planificada según tus objetivos y necesidades específicas para lograr tu máxima recuperación.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#2d4227",
+    secondary: "#203727",
+    accent: "#203727",
+    neutral: "#eef0ee"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "634 27 11 03",
+  whatsapp: "+34634271103",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de fisioterapia.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "C. Empecinado, 11, 47003 Valladolid, España",
+    city: "Valladolid",
+    province: "Álava",
+    postalCode: "47003",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=4882059254564652326&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Kant%C3%A9a%20Fisioterapia%20%4041.6569%2C-4.72149&z=16&output=embed",
+  coordinates: {
+    lat: 41.6569,
+    lng: -4.72149
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - viernes",
+      hours: "9:00–14:00, 17:00–21:00"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 8,
+    url: "https://maps.google.com/?cid=4882059254564652326&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Irene Campos",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Tras una fractura de pelvis me puse en manos de Diego para lograr recuperar al máximo mi forma física. Después de una exhaustiva valoración, comencé con el tratamiento, en el que cada sesión ha sido planificada en base a mis objetivos y necesidades. El abordaje integral de la terapia manual, la Indiba y los ejercicios pautados ha sido clave para mi progreso.\nMuy agradecida por la atención recibida, su profesionalidad y el trato cercano durante todo el proceso.",
+        date: "Hace 3 meses"
       },
       {
-        author: "Javier Padilla",
+        author: "J C",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Diego es el mejor. Muy profesional, atento y explica todo clarísimo. No se anda con rodeos ni intenta engañarte con tratamientos que no te solucionan el problema. Además te ofrece un trato personalizado dependiendo de qué necesites aconsejándote con todo, prevención, tratamiento clínico, tratamiento si estás haciendo algún tipo de entrenamiento etc. Recomendable al 100%.",
+        date: "Hace 7 meses"
       },
       {
-        author: "Melanie Ponce",
+        author: "Jose Gonzalez",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Después de meses buscando solución a mi tendinitis de rodilla, Diego acertó con el tratamiento alternando masajes y punción seca. A los pocos días estaba corriendo como antes. Muy recomendable.",
+        date: "Hace 2 semanas"
       },
       {
-        author: "María Teresa Salguero",
+        author: "paula lopez",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Despues de una operación de rodilla me puse en las manos de Diego para la recuperación, es un gran profesional y me ha ayudado a mejorar cada semana con paciencia y mimo.",
+        date: "Hace 2 meses"
       },
-    ],
+      {
+        author: "Lara",
+        rating: 5,
+        text: "Gran profesional,diego es tío muy agradable.",
+        date: "Hace 8 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "terapia-manual",
+      name: "Terapia Manual",
+      description: "Técnicas manuales especializadas que forman parte del abordaje integral de cada tratamiento. Aplicamos métodos avanzados para aliviar el dolor, mejorar la movilidad articular y acelerar tu proceso de recuperación. Cada sesión se adapta a tu evolución y necesidades específicas.",
+      benefits: [
+        "Alivio efectivo del dolor muscular y articular",
+        "Mejora de la movilidad y flexibilidad",
+        "Complemento ideal con otras técnicas de recuperación"
+      ],
+      icon: "Hand"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "puncion-seca",
+      name: "Punción Seca",
+      description: "Tratamiento especializado para eliminar puntos gatillo y contracturas musculares. Técnica probada con excelentes resultados en tendinitis y dolor crónico. Alternamos esta técnica con masajes para lograr una recuperación completa y duradera.",
+      benefits: [
+        "Eliminación efectiva de contracturas musculares",
+        "Solución para tendinitis crónicas",
+        "Resultados visibles en pocos días"
+      ],
+      icon: "Target"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "indiba",
+      name: "Tecnología Indiba",
+      description: "Tecnología de vanguardia que aplicamos como parte del tratamiento integral. La Indiba acelera la recuperación de tejidos, reduce la inflamación y favorece la regeneración celular. Especialmente efectiva en recuperaciones postquirúrgicas y fracturas.",
+      benefits: [
+        "Acelera la regeneración de tejidos",
+        "Reduce inflamación y edemas",
+        "Potencia los resultados del tratamiento manual"
+      ],
+      icon: "Zap"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "fisioterapia-deportiva",
+      name: "Fisioterapia Deportiva",
+      description: "Tratamiento especializado para deportistas que buscan volver a su máximo rendimiento. Te aconsejamos sobre prevención, tratamiento clínico y pautas específicas según el tipo de entrenamiento que realices. Enfoque personalizado para cada disciplina deportiva.",
+      benefits: [
+        "Recuperación completa para volver a entrenar",
+        "Prevención de futuras lesiones deportivas",
+        "Asesoramiento adaptado a tu deporte"
+      ],
+      icon: "Dumbbell"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "rehabilitacion-postquirurgica",
+      name: "Rehabilitación Postquirúrgica",
+      description: "Programas de recuperación tras cirugías de rodilla, pelvis y otras intervenciones. Seguimiento semanal con paciencia y atención personalizada para que mejores progresivamente. Combinamos diferentes técnicas para lograr tu recuperación completa.",
+      benefits: [
+        "Seguimiento semanal de tu evolución",
+        "Recuperación progresiva y segura",
+        "Vuelta a tu actividad normal"
+      ],
+      icon: "Activity"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "recuperacion-fracturas",
+      name: "Recuperación de Fracturas",
+      description: "Tratamiento especializado tras fracturas óseas para recuperar al máximo tu forma física. Realizamos una valoración exhaustiva inicial y planificamos cada sesión en base a tus objetivos. Abordaje integral con ejercicios pautados específicos para tu caso.",
+      benefits: [
+        "Recuperación máxima de tu forma física",
+        "Plan personalizado según tu fractura",
+        "Ejercicios pautados para tu progreso"
+      ],
+      icon: "Heart"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "tratamiento-tendinitis",
+      name: "Tratamiento de Tendinitis",
+      description: "Solución efectiva para tendinitis crónicas que no han respondido a otros tratamientos. Alternamos masajes y punción seca para abordar el problema de raíz. Resultados comprobados en pocos días para que vuelvas a tu actividad sin dolor.",
+      benefits: [
+        "Solución cuando otros tratamientos no funcionan",
+        "Enfoque directo al origen del problema",
+        "Resultados en pocos días de tratamiento"
+      ],
+      icon: "Target"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "ejercicios-pautados",
+      name: "Ejercicios Personalizados",
+      description: "Cada sesión incluye ejercicios específicamente pautados para tu caso. No aplicamos rutinas genéricas: cada ejercicio está diseñado según tu lesión, objetivos y progreso. Te enseñamos a realizarlos correctamente para maximizar tu recuperación.",
+      benefits: [
+        "Ejercicios adaptados a tu lesión específica",
+        "Aprendes a cuidarte de forma autónoma",
+        "Aceleran tu proceso de recuperación"
+      ],
+      icon: "Activity"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
       title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      description: "Llámanos al 634 27 11 03 o envíanos un WhatsApp para solicitar tu cita. Te atenderemos de forma cercana y resolveremos tus dudas iniciales sobre tu caso."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Valoración Exhaustiva",
+      description: "Realizamos una evaluación completa de tu estado físico, lesión o cirugía. Te explicamos todo con claridad, sin rodeos, y diseñamos un plan de tratamiento personalizado basado en tus objetivos y necesidades reales."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tratamiento Integral",
+      description: "Cada sesión está planificada específicamente para ti, combinando terapia manual, tecnología Indiba, punción seca y ejercicios pautados según tu evolución. Abordaje completo adaptado a tu progreso semanal."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Seguimiento y Recuperación",
+      description: "Acompañamiento continuo con paciencia y mimo durante todo tu proceso. Ajustamos el tratamiento según tu respuesta y te asesoramos en prevención para que vuelvas a tu actividad con total confianza."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Valoración 5★ en Google",
+      description: "Nuestros 8 pacientes nos han valorado con 5 estrellas en Google. Destacan nuestra profesionalidad, trato cercano y resultados efectivos en recuperaciones complejas. La confianza de quienes ya se han recuperado con nosotros es nuestra mejor carta de presentación.",
+      icon: "Award"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Tratamiento Sin Rodeos",
+      description: "Te explicamos todo con claridad y no intentamos engañarte con tratamientos que no solucionan el problema. Vamos directo al origen de tu lesión con técnicas que realmente funcionan. Honestidad y transparencia en cada sesión.",
+      icon: "CheckCircle"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Abordaje Integral Personalizado",
+      description: "Cada sesión está planificada específicamente para ti, combinando terapia manual, tecnología Indiba, punción seca y ejercicios pautados según tu evolución. No aplicamos protocolos genéricos: tu tratamiento se adapta a tus objetivos y necesidades reales.",
+      icon: "Target"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Especialistas en Casos Complejos",
+      description: "Experiencia comprobada en recuperación de fracturas, rehabilitación postquirúrgica y tendinitis crónicas que no han respondido a otros tratamientos. Si llevas meses buscando solución, podemos ayudarte con un enfoque diferente y efectivo.",
+      icon: "Heart"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Diego",
+      role: "Fisioterapeuta",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Profesionales apasionados por la fisioterapia y la rehabilitación. En Kantéa Fisioterapia nos dedicamos a devolver la calidad de vida a nuestros pacientes con tratamientos personalizados y tecnología avanzada."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "Kantéa Fisioterapia - Imagen 1"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "Kantéa Fisioterapia - Imagen 2"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Qué tratamientos ofrece Kantéa Fisioterapia?",
+      answer: "En Kantéa Fisioterapia ofrecemos un abordaje integral que combina terapia manual, tecnología Indiba, punción seca y ejercicios personalizados. Nos especializamos en recuperación postquirúrgica, fracturas, tendinitis crónicas y lesiones deportivas. Cada tratamiento se planifica según tus necesidades específicas y objetivos de recuperación."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Cómo puedo solicitar una cita?",
+      answer: "Puedes solicitar tu cita llamando al 634 27 11 03 o enviando un WhatsApp al mismo número. Te atenderemos de forma cercana y programaremos tu valoración inicial en el horario que mejor te convenga. Resolveremos todas tus dudas antes de la primera sesión."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Cuántas sesiones necesitaré para recuperarme?",
+      answer: "El número de sesiones depende de tu lesión, cirugía o fractura específica. En la valoración exhaustiva inicial te explicaremos con claridad el plan de tratamiento estimado. Algunos pacientes con tendinitis notan mejora en pocos días, mientras que recuperaciones postquirúrgicas requieren un seguimiento semanal más prolongado. Siempre adaptamos el tratamiento a tu evolución real."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué es la tecnología Indiba y para qué sirve?",
+      answer: "La Indiba es una tecnología avanzada que utilizamos en Kantéa Fisioterapia como parte del tratamiento integral. Acelera la regeneración de tejidos, reduce la inflamación y favorece la recuperación celular. Es especialmente efectiva en fracturas, recuperaciones postquirúrgicas y lesiones deportivas, potenciando los resultados de la terapia manual y ejercicios pautados."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿La punción seca es efectiva para las tendinitis?",
+      answer: "Sí, la punción seca ha demostrado excelentes resultados en el tratamiento de tendinitis crónicas. En Kantéa Fisioterapia alternamos punción seca con masajes para abordar el problema de raíz, no solo los síntomas. Muchos pacientes que llevaban meses buscando solución encuentran mejora significativa en pocos días de tratamiento con esta técnica."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Atienden lesiones deportivas y deportistas en activo?",
+      answer: "Sí, la fisioterapia deportiva es una de nuestras especialidades en Kantéa Fisioterapia. Ofrecemos tratamiento personalizado dependiendo del tipo de entrenamiento que realices, asesorándote en prevención, tratamiento clínico y pautas específicas para tu deporte. El objetivo es que vuelvas a correr, entrenar o competir como antes de la lesión."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Realizan seguimiento tras cirugías de rodilla o pelvis?",
+      answer: "Sí, en Kantéa Fisioterapia nos especializamos en rehabilitación postquirúrgica con seguimiento semanal. Tras una operación de rodilla, pelvis u otras cirugías, diseñamos un programa de recuperación progresiva con paciencia y mimo. Combinamos diferentes técnicas para que mejores cada semana hasta recuperar completamente tu funcionalidad y forma física."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Por qué elegir Kantéa Fisioterapia en Valladolid?",
+      answer: "Kantéa Fisioterapia cuenta con una valoración de 5 estrellas en Google basada en 8 reseñas de pacientes reales. Nuestros pacientes destacan la profesionalidad, el trato cercano, la claridad en las explicaciones y los resultados efectivos. No aplicamos tratamientos genéricos: cada sesión está planificada según tus objetivos específicos, sin rodeos ni engaños, solo soluciones reales a tu problema."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Kantéa Fisioterapia",
+    defaultTitle: "Kantéa Fisioterapia Valladolid | Recuperación y Lesiones",
+    defaultDescription: "Fisioterapia especializada en Valladolid. Recuperación de fracturas, cirugías y lesiones deportivas. Terapia manual, Indiba y punción seca. Valoración 5★. Llama al 634 27 11 03",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "fisioterapia Valladolid",
+      "Kantéa Fisioterapia",
+      "fisioterapeuta Valladolid Álava",
+      "punción seca Valladolid",
+      "rehabilitación postquirúrgica Valladolid",
+      "fisioterapia deportiva Valladolid",
+      "Indiba Valladolid",
+      "tratamiento tendinitis Valladolid",
+      "recuperación fracturas Valladolid",
+      "fisioterapia lesiones deportivas",
+      "clínica fisioterapia Valladolid",
+      "Diego fisioterapeuta Valladolid"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Kantéa Fisioterapia",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "C. Empecinado, 11, 47003 Valladolid, España, Valladolid, Álava"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Fisioterapia",
+    "en Valladolid"
+  ],
+  heroDescription: "En Kantéa Fisioterapia te ofrecemos un abordaje integral para tu recuperación. Combinamos terapia manual avanzada, tecnología Indiba, punción seca y ejercicios personalizados para que recuperes tu forma física tras lesiones deportivas, fracturas o cirugías. Tratamiento profesional con trato cercano en cada sesión.",
+  specialty: "Recuperación de lesiones",
+  ctaLabel: "Tu Recuperación",
+  ctaHeadline: "¿Listo para recuperar tu forma física?",
+  ctaDescription: "Solicita tu valoración exhaustiva inicial y comienza tu tratamiento personalizado. Te explicaremos todo con claridad y diseñaremos un plan adaptado a tus objetivos.",
+  statsLabel: "Pacientes",
+  schemaType: "PhysicalTherapy",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
